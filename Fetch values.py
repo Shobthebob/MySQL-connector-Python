@@ -1,13 +1,11 @@
 import mysql.connector
 
-mydb = mysql.connector.connect(host="localhost", user="root" , password="shob25" , database="test")
+mydb = mysql.connector.connect(host="localhost", user="root" , password="" , database="")
 
 mycursor = mydb.cursor( )
-mycursor.execute("Select username from accounts")
+mycursor.execute("Select <column> from <db>")
 
 myresult = mycursor.fetchall( )
-
-un = "u1"
 
 for row in myresult:
 	print(row)
