@@ -1,9 +1,9 @@
 import mysql.connector
 
-mydb = mysql.connector.connect(host="localhost", user="root" , password="shob25" , database="test")
+mydb = mysql.connector.connect(host="localhost", user="root" , password="" , database="")
 
 mycursor = mydb.cursor( )
-sql = "DELETE FROM accounts WHERE Username='Shobthebob'"
+query = "DELETE FROM accounts WHERE <command>'"
 
-mycursor.execute(sql)
+mycursor.execute(query)
 mydb.commit( )
