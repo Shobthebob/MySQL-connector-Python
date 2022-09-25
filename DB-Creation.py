@@ -1,8 +1,8 @@
 import mysql.connector
 
-chetan = mysql.connector.connect(host="localhost", user="root" , password="shob25")
+mydb = mysql.connector.connect(host="localhost", user="root" , password="")
 
-mycursor = chetan.cursor( )
+mycursor = mydb.cursor( )
 
 mycursor.execute("CREATE DATABASES test")
 
