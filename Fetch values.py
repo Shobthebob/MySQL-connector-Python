@@ -9,3 +9,5 @@ myresult = mycursor.fetchall( )
 
 for row in myresult:
 	print(row)
+
+mydb.commit( )
